@@ -1,0 +1,105 @@
+//
+//  WIDGET: PROFILE
+//
+
+
+
+//
+//  Widget modifier, used for profile widget which
+//  has user details and menu links
+//
+.ps-widget--profile {
+  font-size: $font-size-sm;
+}
+
+
+//
+//  A profile widget wrapper
+//
+.ps-widget--profile__wrapper {}
+
+
+//
+//  A header inside profile widget, wrapping
+//  user avatar, full name and preferences link
+//
+.ps-widget--profile__header {
+  display: table;
+  width: 100%;
+  margin-bottom: $padding-sm;
+
+  .ps-user-name {
+    font-size: $font-size-md;
+    line-height: $line-height-base;
+  }
+}
+
+
+.ps-widget--profile__avatar {
+  display: table-cell;
+  width: 64px;
+}
+
+
+.ps-widget--profile__details {
+  display: table-cell;
+  padding-left: $padding-sm;
+  vertical-align: middle;
+
+  > a {
+    display: block;
+
+    > small {
+      font-size: $font-size-sm;
+      line-height: $line-height-base;
+    }
+  }
+}
+
+
+//
+//  Small bar with notifications
+//
+.ps-widget--profile__notifications {
+  margin-top: 4px;
+
+  > ul {
+    @extend %clearfix;
+    @extend %ps-list;
+
+    > li {
+      float: left;
+      border-right: $divider;
+
+      &:first-child {
+        > a {
+          padding-left: 0;
+        }
+      }
+
+      &:last-child {
+        border: none;
+      }
+
+      > a {
+        position: relative;
+        display: block;
+        padding: 2px 8px;
+        font-size: $font-size-base;
+        background-color: transparent;
+        outline: none;
+        text-align: center;
+
+        &:hover,
+        &:focus {
+          //background-color: rgba(0,0,0, .025);
+        }
+      }
+    }
+  }
+
+  .ps-notification-counter {
+    top: 0;
+    right: 1px;
+  }
+}

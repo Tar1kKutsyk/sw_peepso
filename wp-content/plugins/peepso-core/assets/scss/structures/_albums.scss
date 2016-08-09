@@ -1,0 +1,69 @@
+//
+//  STRUCTURE: ALBUMS
+//
+
+
+
+//
+//  Wrapping a list of albums
+//
+.ps-albums {
+  @extend %photos;
+}
+
+
+//
+//  A album item, wrapping photo with
+//  details
+//
+.ps-albums__item {
+  @extend %photo__item;
+
+  background-color: $photo-item-bg;
+  border: 3px solid $photo-item-border;
+}
+
+
+//
+//  A album item, wrapping photo with
+//  details
+//
+.ps-albums__item-wrapper {
+  @extend %photo__wrapper;
+}
+
+
+//
+//  Wrapping a album title
+//
+.ps-albums__item-title {
+  padding: $padding-sm;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+
+//
+//  Wrapping album details, like number
+//  of photo and permissions
+//
+.ps-albums__item-details {
+  position: relative;
+  padding-left: $padding-sm;
+  padding-right: 30px;
+  padding-bottom: $padding-sm;
+  font-size: $font-size-sm;
+  line-height: 1;
+  color: $color-muted;
+}
+
+
+//
+//  Wrapping permissions icon which
+//  indicates a status
+//
+.ps-albums__item-status {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}

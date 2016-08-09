@@ -1,0 +1,22 @@
+//
+//  BASE
+//
+
+
+
+#peepso-wrap,
+#ps-window {
+  box-sizing: border-box;
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+}
+
+
+.peepso {
+  @extend %reset;
+
+  height: 100%;
+  min-height: 480px;
+}
